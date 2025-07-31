@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Taghuyan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .bg-dark-transparent{
+            background-color:#2b2825d9 !important
+        }
+    .owl-theme .item {
+    background-color: black; /* Backdrop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px; /* Adjust height as needed */
+  }
+
+  .owl-theme  .item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures image scales nicely */
+  }
+    .owl-theme  {
+      position: relative;
+    }
+    .bg-dgreen {
+        background-color: #08463B !important;
+    }
+    .big-carousel {
+        position: relative;
+    }
+      .big-carousel .item {
+      background-color: #000;
+    }
+
+    .big-carousel img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+
+.big-carousel .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  pointer-events: auto;
+  background: none;
+  color: #fff;
+  border: none;
+  width: 66px;
+  height: 66px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  transform: scale(1.1);
+}
+
+.owl-nav i {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+    .owl-dots {
+      position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  z-index: 20;
+    }
+
+    .owl-dot {
+      display: inline-block;
+      margin: 0 4px;
+    }
+
+    .owl-dot span {
+      width: 12px;
+      height: 12px;
+      background: #ccc;
+      display: inline-block;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .owl-dot.active span {
+      background: #007bff;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <span>taghuyanresthouse@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0"><img src="img/logo.png" style="max-width:10%">  Taghuyan</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>+639 177 911 085</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>Taghuyan</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="#about" class="nav-item nav-link">About Us</a>
+                <a href="#details" class="nav-item nav-link">Details</a>
+                <a href="#contact" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-4 text-center bg-dark-transparent text-lg-start p-5 rounded-3">
+                    <h1 class="display-1 text-uppercase text-primary mb-4">Taghuyan</h1>
+                    <h1 class="text-white">Resthouse and Cafe</h1>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5" id="about">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">About Us</h2>
+                <h1 class="display-4 text-uppercase">Welcome To Taghuyan</h1>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <h4 class="mb-4">Taghuyan is a two-hectare farm lot atop a ravine, overlooking a stream. The area is lined with pine trees, a lush garden of local flora, and a pond</h4>
+                    <p class="mb-5">This venue is a good respite for anyone to experience simple farm life. It is open for special events and occasions. </p>
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                                <i class="fa fa-house-chimney-user fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">Bahay Bulakan</h4>
+                            <p class="mb-0">A farm house that accommodates 8-10 pax minimum. The house has a kitchen, bathroom, a living room area, a master bedroom, and extra beds.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                                <i class="fa fa-mug-saucer fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">Alimyon Cafe</h4>
+                            <p class="mb-0">Alimyon offers homemade baked goods, beverages, and seasonal products fresh from our gardens such as jams, herbal vinegars, and many more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-img py-5" id="details">
+        <div class="container py-5">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-3 col-md-4">
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-calendar-days fa-2x text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h1 class="text-primary text-uppercase">Events</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="d-flex">
+                        <div class="ps-4">
+                            <h3 class="mb-0 text-white">Garden venue is for any special occasion. Inclusions are sound system, tables, chairs, tents and carpets.</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+    <div class="bg-primary content about" >
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container-fluid about py-2">
+        <div class="container">
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Ministry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Bahay Bulakan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Garden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-4">Alimyon</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-3">
+                            <div class="bg-dgreen text-white p-4 mb-4">
+                                <p class="p-4">Taghuyan holds a weekly Sunday service and is dedicated to spreading God's Word to the locals of Lunocan, especially its children</p>
+
+                                <img class="img-fluid mb-5" src="img/tgm.jpg">
+                                <h5 class="text-uppercase text-white">Mission</h5>
+                                <p class="p-4">To fulfill Christ Commission by proclaiming the gospel reaching the lost, teaching the Bible with integrity and nurturing spiritual growth</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="bg-dgreen p-4 mb-0">
+                                <p class="p-4 text-white">Guest can cook their own food, have a videoke and a bonfire</p>
+                                <div class="bg-dark text-white border-inner p-4">
+                                        <div class="d-flex justify-content-center mb-0">
+                                            <div class="ps-1">
+                                                <h4 class="text-primary text-uppercase mb-0">Day-time use</h4>
+                                            </div>
+                                        </div>
+                                    <p class="mb-0 text-primary">FOR PHP 1500</p>
+                                </div>
+                                <div class="owl-carousel owl-theme">
+                                      <div class="item">
+                                        <img src="img/b1.jpg" alt="Slide 1">
+                                      </div>
+                                      <div class="item">
+                                        <img src="img/b2.jpg" alt="Slide 2">
+                                      </div>
+                                      <div class="item">
+                                        <img src="img/b3.jpg" alt="Slide 3">
+                                      </div>
+                                      <div class="item">
+                                        <img src="img/b4.jpg" alt="Slide 4">
+                                      </div>
+                                      <div class="item">
+                                        <img src="img/b5.jpg" alt="Slide 5">
+                                      </div>
+                                    </div>
+                                <div class="bg-dark text-white border-inner p-4">
+                                        <div class="d-flex justify-content-center mb-0">
+                                            <div class="ps-1">
+                                                <h4 class="text-primary text-uppercase mb-0">Overnight stay</h4>
+                                            </div>
+                                        </div>
+                                    <p class="mb-0 text-primary">FOR PHP 3000</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                           <div class="bg-dgreen p-4 mb-0">
+                                <p class="text-white p-3">Garden is for any special occassion. Inclusions are sound system, tables, chairs, tents and carpets.</p>
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                          <img src="img/g1.jpg" alt="Slide 1">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/g2.jpg" alt="Slide 2">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/g3.jpg" alt="Slide 3">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/g4.jpg" alt="Slide 4">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/g5.jpg" alt="Slide 5">
+                                        </div>
+                                    </div>
+                                <div class="bg-dark text-white border-inner p-4">
+                                        <div class="d-flex justify-content-center mb-0">
+                                            <div class="ps-1">
+                                                <h4 class="text-primary text-uppercase mb-1">Garden Venue</h4>
+                                            </div>
+                                        </div>
+                                    <p class="mb-1 text-primary">FOR PHP 3000</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="bg-dgreen p-4 mb-4">
+                                <p class="text-white p-3">Serves home-made pastries, pasta (organic ingredients), fresh fruit juices, dried ang fresh herbs and some cottage industries</p>
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                          <img src="img/a1.jpg" alt="Slide 1">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/a2.jpg" alt="Slide 2">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/a3.jpg" alt="Slide 3">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/a4.jpg" alt="Slide 4">
+                                        </div>
+                                        <div class="item">
+                                          <img src="img/a5.jpg" alt="Slide 5">
+                                        </div>
+                                    </div>
+                                    
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img class="img-fluid img-overlap aos-init aos-animate" data-aos="zoom-out" src="img/hero_4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Full page scroller start   -->
+     <div class="owl-carousel big-carousel">
+        <div class="item">
+          <img src="img/s1.jpg" alt="Slide 1">
+        </div>
+        <div class="item">
+          <img src="img/s2.jpg" alt="Slide 2">
+        </div>
+        <div class="item">
+          <img src="img/s3.jpg" alt="Slide 3">
+        </div>
+        <div class="item">
+          <img src="img/s4.jpg" alt="Slide 4">
+        </div>
+        <div class="item">
+          <img src="img/s5.jpg" alt="Slide 5">
+        </div>
+    </div>
+    
+    <!-- Contact Start -->
+    <div class="container-fluid service position-relative px-5 mt-5" style="margin-bottom: 135px;" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3"><i class="fa fa-phone"></i> Call Us</h4>
+                        <p>Reserve Now! You can reach us through call: +639 177 911 085</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3"><i class="fa fa-envelope"></i> Email Us</h4>
+                        <p><a class='text-white' href='mailto:taghuyanresthouse@gmail.com'>taghuyanresthouse@gmail.com</a> or you can contact us through our facebook: Taghuyan</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3"><i class='fa fa-location-dot'></i> Visit Us</h4>
+                        <p>Zone 4, Lunocan, Manolo Fortich, Bukidnon, Mindanao, Philippines</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 text-center">
+                    <h1 class="text-uppercase text-light mb-4">GET IN TOUCH</h1>
+                    <h3 class="text-light">Taghuyan is open to everyone from <strong>Tuesday to Sunday</strong></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-secondary py-4" style="background: #111111;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 <a class="text-white border-bottom" href="#">Taghuyan.org</a>. All Rights Reserved. 
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".owl-theme").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 800
+      });
+      $(".big-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navText: [
+          '<i class="fas fa-chevron-left"></i>',
+          '<i class="fas fa-chevron-right"></i>'
+        ],
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 900
+      });
+    });
+  </script>
+</body>
+
+</html>
